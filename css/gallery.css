@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+*
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar-center{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding: 0;
+    margin-right: 60px;
+    text-align: center;
+}
+.navbar-center a{
+    text-decoration: none;
+    color: #335C9A;
+    width: 100px;
+    display: block;
+    padding: 15px 20px;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 600;
+    text-align: center;
+}
+.navbar-center a:hover{
+    background: whitesmoke;
+    color: black;
+    transition: 0.5s;
+}
+.navbar-right{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.navbar-right a{
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #335C9A;
+    background-color: #fff;
+    width: 100px;
+    display: block;
+    padding: 15px 20px;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 600;
+    text-align: center;
+}
+.navbar-right a:hover{
+    background: #335C9A;
+    color: #fff;
+    transition: 0.5s;
+}
+.gallerycontainer{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.gallerycontainer img{
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    pointer-events: none;
+}
+footer {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 12px 16px;
+    color: #335C9A;
+    list-style: none;
+    font-weight: 500;
+}
+footer ul{
+    padding-left: 0;
+}
+.btn {
+    align-items: center;
+    background-color: #fff; 
+    border: none; 
+    color: #264369; 
+    padding: 12px 16px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+.btn:hover {
+    background-color: #d9e1eb;
+    transition: 0.5s;
+}
+@media only screen and (max-width: 800px) {
+    .background-container{
+        display: block;
+    }
+    .content-left{
+        padding-top: 40px;
+    }
+    .content-right img{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .navbar-logo{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #d9e1eb;
+    }
+    .navbar-center{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .background-container{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 0px;
+        background: white;
+        text-align: center;
+    }
+    .content-left p{
+        font-weight: 400;
+        font-size: 30px;
+        width: 100%;
+    }
+    .content-left .welcome{
+        margin-top: 60px;
+        margin-bottom: 0px;
+        font-weight: 400;
+        font-size: 30px;
+        width: 100%;
+    }
+    .content-left .desc{
+        display: inline-flex;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 30px;
+        width: 75%;
+    }
+    .content-left{
+        background-color: #d9e1eb;
+        width: 100%;
+        color: #335C9A;
+        align-self: center;
+    }
+    .content-right{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .content-right img{
+        width: 400px;
+        align-self: center;
+    }
+    .content-left .button{
+        height: 70px;
+        width: 100%;
+        align-items: center;
+        white-space: nowrap;
+    }
+    .content-left .button{
+        padding-bottom: 60px;
+    }
+    .content-left .button a{
+        width: 192px;
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: none;
+        color: white;
+        background-color: #264369;
+        margin: 10px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+}
+
+
