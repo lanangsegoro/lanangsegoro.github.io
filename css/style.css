@@ -255,5 +255,10 @@ footer ul{
         text-align: center;
     }
 }
+@media only screen and (max-width: 360px){
+    .content-right img{
+        width: 250px;
+    }
+}
 
 
